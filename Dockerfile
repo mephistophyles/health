@@ -6,7 +6,7 @@ COPY tsconfig.json tsconfig.app.json tsconfig.node.json vite.config.ts ./
 COPY web ./web
 RUN npm run build
 
-FROM python:3.12-slim-bookworm AS runtime
+FROM python:3.14-slim-bookworm AS runtime
 WORKDIR /app
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 ENV WEB_DIST_PATH=/app/web-dist MIGRATIONS_PATH=/app/migrations
