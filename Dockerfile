@@ -1,4 +1,4 @@
-FROM node:22-bookworm-slim AS web-build
+FROM node:25-bookworm-slim AS web-build
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci --ignore-scripts
