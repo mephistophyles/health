@@ -1,0 +1,9 @@
+{
+  "slug": "health",
+  "name": "Health",
+  "kind": "app",
+  "description": "Weekly dinners, grocery lists, and training plans for the household",
+  "group": "household",
+  "access": ["me", "household"],
+  "status": "active"
+}
