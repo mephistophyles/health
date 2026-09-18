@@ -34,7 +34,7 @@ jobs:
       - run: uv run pytest
         env:
           TEST_DATABASE_URL: postgresql://postgres:test@127.0.0.1:5432/health_test
-      - uses: docker/login-action@v3
+      - uses: docker/login-action@v4
         with:
           registry: ghcr.io
           username: ${{ github.actor }}
